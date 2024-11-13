@@ -19,7 +19,7 @@ body a {
 body {
     border: 5px solid #eeeeee;
     background-color: #131b23;
-    max-width: 960px;
+    max-width: 768px;
     min-width: 640px;
     min-height: 1000px;
 }
@@ -167,6 +167,7 @@ h3 {
     cursor: default;
     transition: 500ms;
 }
+
 .redacted:hover {
     color: #eeeeee;
     transition: 500ms;
