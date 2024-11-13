@@ -8,14 +8,29 @@ body a {
     color: #DEB841;
 }
 
+.menu-container a {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 1em 2em;
+    margin: -1em -2em;
+}
+
 body {
     border: 5px solid #eeeeee;
     background-color: #131b23;
     max-width: 960px;
     min-width: 640px;
+    min-height: 1000px;
 }
 
 p {
+    color: #eeeeee;
+    margin: 10px 10px;
+}
+
+h2,
+h3 {
     color: #eeeeee;
     margin: 10px 10px;
 }
@@ -35,7 +50,7 @@ p {
     color: #eeeeee;
     padding: 10px;
     margin: 40px;
-    border-radius: 20px;
+    border-radius: 30px 5px 30px 5px;
     box-shadow: 0 0 15px 15px #131b23;
     transition: 500ms;
 }
@@ -48,8 +63,8 @@ p {
 }
 
 .slogan {
-    text-align: right;
-    margin-left: 10px;
+    text-align: left;
+    margin-left: 20px;
     margin-right: 20px;
     text-decoration: underline;
     text-shadow: 10px 10px 5px #131b2360;
@@ -93,4 +108,67 @@ p {
     color: #6D0000;
     text-decoration: none;
     font-weight: bold;
+}
+
+.page-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.profile {
+    border: 5px solid #DEB841;
+    padding: 5px;
+    margin: 0 5px;
+    align-content: center;
+    transition: 500ms;
+    border-radius: 30px 5px 30px 5px;
+}
+
+.profile-photo {
+    width: auto;
+    max-width: 300px;
+    margin: 0 5px -4px 5px;
+    border: 5px solid #6D0000;
+    border-radius: 5px;
+}
+
+.profile:hover {
+    border-color: #6D0000;
+    background-color: #000000;
+    transition: 500ms;
+    cursor: default;
+}
+
+#profile-photo1 {
+    filter: saturate(0%);
+    transition: 500ms;
+}
+
+#profile-photo2 {
+    filter: opacity(0);
+    transform: scaleX(-1);
+    transition: 500ms;
+}
+
+#profile-photo1:hover {
+    filter: saturate(100%);
+    transition: 500ms;
+}
+
+#profile-photo2:hover {
+    filter: opacity(100%);
+    transition: 500ms;
+}
+
+.redacted {
+    color: #000000;
+    background-color: #000000;
+    cursor: default;
+    transition: 500ms;
+}
+.redacted:hover {
+    color: #eeeeee;
+    transition: 500ms;
+    cursor: none;
 }
