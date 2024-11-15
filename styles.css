@@ -70,6 +70,10 @@ h3 {
     text-shadow: 10px 10px 5px #131b2360;
 }
 
+.slogan:hover {
+    cursor: default;   
+}   
+
 .divider {
     margin: 0 auto 10px auto;
 }
